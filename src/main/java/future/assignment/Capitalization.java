@@ -1,5 +1,7 @@
 package future.assignment;
 
+import java.util.ArrayList;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class Capitalization {
@@ -15,6 +17,11 @@ public class Capitalization {
     }
 
     public void capitalizeWithLib2(String sentence){
-        System.out.println(StringUtils.capitalize(sentence));
+        String[] sentences = StringUtils.split(sentence);
+        ArrayList<String> res = new ArrayList();
+        for (String s : sentences) {
+            res.add(StringUtils.capitalize(s));
+        }
+        System.out.println(res);
     }
 }
