@@ -1,8 +1,7 @@
 package future.assignment;
 import java.util.Arrays;
-
 import java.util.ArrayList;
-
+import org.apache.commons.lang3.text.WordUtils;
 import org.apache.commons.lang3.StringUtils;
 
 public class Capitalization {
@@ -10,12 +9,10 @@ public class Capitalization {
     public Capitalization(){}
 
     public void capitalizeWithLib1(String sentence){
-        String[] sentences = StringUtils.split(sentence);
-        ArrayList<String> res = new ArrayList();
-        for (String s : sentences) {
-            res.add(StringUtils.capitalize(s));
-        }
-        System.out.println(res);
+        String temp = WordUtils.capitalizeFully(sentence);
+        String separator = " ";
+        String[] a = StringUtils.split(temp, separator);
+        System.out.println(Arrays.toString(a));
     }
 
     public void capitalizeWithLib2(String sentence){
@@ -32,6 +29,8 @@ public class Capitalization {
         System.out.println(Arrays.toString(arr));
     }
     public void capitalizeWithoutLib2(String sentence){
+        String[] arr = sentence.split(" ");
+        StringBuilder sb = new StringBuilder();
 
         for (String s : arr) {
             sb.append(Character.toUpperCase(s.charAt(0)))
