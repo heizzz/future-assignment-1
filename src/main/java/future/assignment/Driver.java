@@ -1,4 +1,5 @@
 package future.assignment;
+import java.util.Scanner;
 
 import java.util.Scanner;
 

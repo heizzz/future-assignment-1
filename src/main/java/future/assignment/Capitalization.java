@@ -15,12 +15,18 @@ public class Capitalization {
     }
 
     public void capitalizeWithoutLib1(String sentence){
-
+          String[] arr = sentence.split(" ");
+//        String[] arr2 = [];
+//        StringBuffer sb = new StringBuffer();
+//        System.out.println(arr[2]);
+        for (int i=0; i<arr.length; i++){
+            arr[i]=arr[i].toUpperCase();
+        }
+//        for (String s : arr) {
+            System.out.println(arr);
+//        }
     }
-
     public void capitalizeWithoutLib2(String sentence){
-        String[] arr = sentence.split(" ");
-        StringBuilder sb = new StringBuilder();
 
         for (String s : arr) {
             sb.append(Character.toUpperCase(s.charAt(0)))
