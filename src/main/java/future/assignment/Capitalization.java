@@ -1,4 +1,5 @@
 package future.assignment;
+import java.util.Arrays;
 
 import java.util.ArrayList;
 
@@ -22,16 +23,13 @@ public class Capitalization {
     }
 
     public void capitalizeWithoutLib1(String sentence){
-          String[] arr = sentence.split(" ");
-//        String[] arr2 = [];
-//        StringBuffer sb = new StringBuffer();
-//        System.out.println(arr[2]);
+        String[] arr = sentence.split(" ");
+
         for (int i=0; i<arr.length; i++){
             arr[i]=arr[i].toUpperCase();
         }
-//        for (String s : arr) {
-            System.out.println(arr);
-//        }
+
+        System.out.println(Arrays.toString(arr));
     }
     public void capitalizeWithoutLib2(String sentence){
 
