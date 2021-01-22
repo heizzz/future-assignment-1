@@ -1,13 +1,19 @@
 package future.assignment;
 
 import org.apache.commons.lang3.text.WordUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 
 public class Capitalization {
 
     public Capitalization(){}
 
     public void capitalizeWithLib1(String sentence){
-        
+        String temp = WordUtils.capitalizeFully(sentence);
+        String separator = " ";
+        String[] a = StringUtils.split(temp, separator);
+        System.out.println(Arrays.toString(a));
     }
 
     public void capitalizeWithLib2(String sentence){

@@ -7,6 +7,7 @@ public class Driver {
         Capitalization capitalization = new Capitalization();
         Scanner sc= new Scanner(System.in);
         String test= sc.nextLine();
+        capitalization.capitalizeWithLib1(test);
         capitalization.capitalizeWithLib2(test);
         capitalization.capitalizeWithoutLib2(test);
     }
