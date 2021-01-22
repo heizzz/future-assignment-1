@@ -8,8 +8,13 @@ public class Capitalization {
 
     public Capitalization(){}
 
-    public void capitalizeWithLib(String sentence){
-
+    public void capitalizeWithLib1(String sentence){
+        String[] sentences = StringUtils.split(sentence);
+        ArrayList<String> res = new ArrayList();
+        for (String s : sentences) {
+            res.add(StringUtils.capitalize(s));
+        }
+        System.out.println(res);
     }
 
     public void capitalizeWithoutLib(String sentence){
@@ -17,11 +22,5 @@ public class Capitalization {
     }
 
     public void capitalizeWithLib2(String sentence){
-        String[] sentences = StringUtils.split(sentence);
-        ArrayList<String> res = new ArrayList();
-        for (String s : sentences) {
-            res.add(StringUtils.capitalize(s));
-        }
-        System.out.println(res);
     }
 }
