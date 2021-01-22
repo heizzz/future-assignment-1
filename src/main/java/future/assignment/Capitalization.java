@@ -1,15 +1,17 @@
 package future.assignment;
 
+import org.apache.commons.lang3.text.WordUtils;
+
 public class Capitalization {
 
     public Capitalization(){}
 
     public void capitalizeWithLib1(String sentence){
-
+        
     }
 
     public void capitalizeWithLib2(String sentence){
-
+        System.out.println(WordUtils.capitalizeFully(sentence));
     }
 
     public void capitalizeWithoutLib1(String sentence){
@@ -25,6 +27,5 @@ public class Capitalization {
                     .append(s.substring(1)).append(" ");
         }
         System.out.println(sb);
-
     }
 }
